@@ -1,8 +1,21 @@
+//<button type="button" onclick="getFetch();">Get Value</button>
+
+document.querySelector('button').addEventListener('click', getFetch)
+
+const table = document.querySelector('table')
+
 function getFetch(){
     const userInput = document.getElementById("barcode").value;
     
     const url = `https://world.openfoodfacts.org/api/v0/product/${userInput}.json`
-  
+
+        if(table.classList.add('hidden')){
+            document.location.reload()
+        }else{
+            table.classList.toggle('hidden')
+        }
+        
+
     fetch(url)
         .then(res => res.json()) // parse response as JSON
         .then(data => {
@@ -28,7 +41,6 @@ class ProductInfo {
     }
 
     showInfo() {
-        //console.log(this.ingredients)
         document.getElementById("product-img").src = this.image;
         document.getElementById("product-name").innerHTML = this.name
     }
