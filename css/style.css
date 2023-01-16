@@ -32,6 +32,15 @@ span {
   margin-top: 1rem;
 }
 
+.no-span {
+    margin-top: .5rem;
+    font-size: 1rem;
+}
+
+.enter-barcode {
+    margin-top: 5rem;
+}
+
 input {
   width: 200px;
   margin:20px auto;
@@ -41,10 +50,14 @@ input {
 button {
   margin:20px auto;
   display:block;
+  border-radius: 5px;
+  border-style: none;
+  padding: .2rem;
 }
 
 button:hover {
   cursor: pointer;
+  background: skyblue;
 }
 
 img {
@@ -66,10 +79,6 @@ table, th, td {
 
 .hidden {
   visibility: hidden;
-}
-
-.yes-items {
-  background: white;
 }
 
 .no-items {
