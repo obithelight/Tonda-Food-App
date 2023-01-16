@@ -33,8 +33,9 @@ span {
 }
 
 .no-span {
-    margin-top: .5rem;
     font-size: 1rem;
+    margin-top: .5rem;
+    font-family: sans-serif;
 }
 
 .enter-barcode {
@@ -43,8 +44,9 @@ span {
 
 input {
   width: 200px;
-  margin:20px auto;
   display: block;
+  margin:20px auto;
+  font-family: sans-serif;
 }
 
 button {
